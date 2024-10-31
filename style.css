@@ -1,0 +1,298 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #e8f5e9; /* Warna alami */
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2e7d32;
+  padding: 1em 2em;
+}
+
+header h1 {
+  color: #aef8b0;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+header nav ul li a {
+  color: #aef8b0;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+  color: #dfffe0;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Menutupi seluruh tinggi layar */
+  background-image: url('img/alam.jpg'); /* Ganti dengan gambar latar yang sesuai */
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Overlay gelap untuk teks terbaca */
+}
+
+.hero h2 {
+  font-size: 8em;
+  margin: 0;
+  z-index: 1; /* Agar teks tampil di atas overlay */
+  color: rgba(255, 255, 255, 0.278);
+   /* Efek bayangan pada teks */
+}
+
+.hero p {
+  font-size: 1.5em;
+  margin-top: 10px;
+  z-index: 1;
+  color: rgba(255, 255, 255, 0.382);
+  max-width: 600px;
+}
+
+/* Destinasi & Paket Cards */
+#destinasi {
+  padding: 50px;
+  text-align: center;
+}
+
+#destinasi h2 {
+  font-size: 2.5em;
+  color: #2e7d32; /* Biru alami */
+}
+
+#destinasi p {
+  font-size: 1.2em;
+  color: #388e3c;
+  margin-bottom: 30px;
+}
+
+.card-container {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  padding: 20px;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05); /* Efek zoom ringan */
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 4px solid #bbdefb; /* Warna biru terang */
+}
+
+.card h3 {
+  font-size: 1.5em;
+  color: #388e3c;
+  margin: 15px 0;
+}
+
+.card p {
+  padding: 0 15px 15px;
+  color: #555;
+}
+
+
+/* Galeri */
+.galeri {
+  padding: 50px;
+  text-align: center;
+}
+
+.galeri h1 {
+  font-size: 2.5em;
+  color: #2e7d32;
+}
+
+.galeri p {
+  font-size: 1.2em;
+  color: #388e3c;
+  margin-bottom: 30px;
+}
+
+.galeri-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.galeri-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.galeri-grid img:hover {
+  transform: scale(1.05);
+}
+
+a {
+  color: #2e7d32; /* Warna teks link */
+  text-decoration: none; /* Menghilangkan garis bawah default */
+  font-weight: bold; /* Membuat teks tebal */
+}
+
+a:hover {
+  color: #2e7d32; /* Warna teks saat di-hover */
+  text-decoration: underline; /* Tambahkan garis bawah saat di-hover */
+}
+
+
+
+/* Layanan */
+.layanan {
+  padding: 50px;
+  text-align: center;
+}
+
+.layanan h1 {
+  font-size: 2.5em;
+  color: #2e7d32; /* Warna hijau alami */
+}
+
+.layanan p {
+  font-size: 1.2em;
+  color: #4caf50;
+  margin-bottom: 30px;
+}
+
+.daftar-layanan {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.layanan-item {
+  background: #ffffff;
+  border: 1px solid #c8e6c9;
+  border-radius: 8px;
+  padding: 20px;
+  width: 280px;
+  margin: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.layanan-item:hover {
+  transform: scale(1.05);
+}
+
+.layanan-item h2 {
+  font-size: 1.5em;
+  color: #388e3c;
+}
+
+.layanan-item p {
+  color: #555;
+}
+
+
+/* Kontak Form */
+#kontak {
+  padding: 50px;
+  text-align: center;
+}
+
+#kontak h2 {
+  font-size: 2.5em;
+  color: #2e7d32;
+}
+
+#kontak p {
+  font-size: 1.2em;
+  color: #388e3c;
+  margin-bottom: 30px;
+}
+
+.form-kontak {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0);
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-kontak label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #4caf50;
+  text-align: left;
+}
+
+.form-kontak input,
+.form-kontak textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #a5ffa8;
+  border-radius: 5px;
+  font-size: 1em;
+  box-sizing: border-box;
+  background-color: #e5ffe5; /* Warna latar belakang kotak */
+  color: #333; /* Warna teks dalam kotak */
+}
+
+.form-kontak button {
+  background-color: #2e7d32;
+  color: #cbffcc;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+
+.form-kontak button:hover {
+  background-color: #2e7d32;
+}

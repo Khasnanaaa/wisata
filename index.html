@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wisata Alam Modern</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Explore Alam</h1>
+    <nav>
+      <ul>
+        <li><a href="#beranda">Beranda</a></li>
+        <li><a href="#destinasi">Destinasi</a></li>
+        <li><a href="#galeri">Galeri</a></li>
+        <li><a href="#layanan">Layanan</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="beranda" class="hero">
+    <h2>Temukan Keindahan Alam</h2>
+    <p>Wisata alam yang tak terlupakan menanti Anda.</p>
+  </section>
+
+  <!-- Destinasi Section -->
+  <section id="destinasi">
+    <h2>Destinasi Populer</h2>
+    <p>Jelajahi destinasi wisata alam terbaik untuk pengalaman tak terlupakan.</p>
+    
+    <div class="card-container">
+      <div class="card">
+        <img src="img/komodo.jpg" alt="Pulau Komodo">
+        <h3><a href="https://id.wikipedia.org/wiki/Pulau_Komodo">Pulau Komodo</a></h3>
+        <p>Sebuah pulau yang terletak di Kepulauan Nusa Tenggara, berada di sebelah timur Pulau Sumbawa, yang dipisahkan oleh Selat Sape. Pulau Komodo dikenal sebagai habitat asli hewan komodo. Pulau ini termasuk salah satu kawasan Taman Nasional Komodo yang dikelola oleh Pemerintah Pusat.</p>
+      </div>
+      <div class="card">
+        <img src="img/Bali.jpg" alt="Bali">
+        <h3><a href="https://id.wikipedia.org/wiki/Bali">Bali</a></h3>
+        <p>Sebuah provinsi di Indonesia yang terletak pada bagian barat Kepulauan Nusa Tenggara dan beribu kota di Kota Denpasar. Pulau Bali, yang merupakan pulau terbesar di Provinsi Bali, memiliki beberapa julukan, di antaranya Pulau Dewata dan Pulau Seribu Pura. Pada tahun 2020, penduduk provinsi Bali berjumlah 4.317.404 jiwa, dengan kepadatan 747 jiwa/km2, dan pada pertengahan 2024 berjumlah 4.361.106 jiwa.</p>
+      </div>
+      <div class="card">
+        <img src="img/raja-ampat.jpg" alt="Kepulauan Raja">
+        <h3><a href="https://id.wikipedia.org/wiki/Kepulauan_Raja_Ampat">Raja Ampat</a></h3>
+        <p>Merupakan tempat yang sangat berpotensi untuk dijadikan sebagai objek wisata, terutama wisata penyelaman. Perairan Kepulauan Raja Ampat menurut berbagai sumber, merupakan salah satu dari 10 perairan terbaik untuk diving site di seluruh dunia. Bahkan, mungkin juga diakui sebagai nomor satu untuk kelengkapan flora dan fauna bawah air pada saat ini.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Galeri Section -->
+    <section class="galeri">
+      <h1>Galeri Pemandangan</h1>
+      <p>Nikmati keindahan alam melalui galeri pemandangan kami.</p>  
+      <div class="galeri-grid">
+        <img src="img/Bali1.jpg" alt="Pemandangan 1">
+        <img src="img/komodo1.jpg" alt="Pemandangan 2">
+        <img src="img/raja-ampat1.jpg" alt="Pemandangan 3">
+        <img src="img/Bali2.jpg" alt="Pemandangan 4">
+        <img src="img/komodo3.jpg" alt="Pemandangan 5">
+        <img src="img/raja-ampat2.jpeg" alt="Pemandangan 6">
+      </div>
+    </section>
+
+  <!-- Layanan Kami -->
+    <section class="layanan">
+      <h1>Layanan Wisata Alam Kami</h1>
+      <p>Menawarkan berbagai layanan untuk menemani Anda menjelajahi keindahan alam.</p>
+      
+      <div class="daftar-layanan">
+        <div class="layanan-item">
+          <h2>Paket Tur Alam</h2>
+          <p>Beragam paket tur untuk berbagai destinasi alam yang memukau.</p>
+          <p><a href="https://alamindonesia.co.id/category/open-trip/ target="_blank">Klik di sini untuk mengunjungi website</a>
+          </p>
+        </div>
+        <div class="layanan-item">
+          <h2>Pemandu Wisata Profesional</h2>
+          <p>Pemandu berpengalaman yang siap memandu Anda menjelajahi alam dengan aman.</p>
+          <p><a href="https://www.panduasia.com/about" target="_blank">Klik di sini untuk mengunjungi website</a>
+        </div>
+      </div>
+    </section>
+
+  <!-- Kontak Section -->
+  <section id="kontak">
+    <h2>Kontak Kami</h2>
+    <p>Hubungi kami untuk informasi lebih lanjut atau pertanyaan tentang wisata alam.</p>
+    
+    <form action="#" method="post" class="form-kontak">
+      <label for="nama">Nama</label>
+      <input type="text" id="nama" name="nama" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="subjek">Subjek</label>
+      <input type="text" id="subjek" name="subjek" required>
+
+      <label for="pesan">Pesan</label>
+      <textarea id="pesan" name="pesan" rows="4" required></textarea>
+
+      <button type="submit">Kirim Pesan</button>
+    </form>
+  </section>
+</body>
+</html>
